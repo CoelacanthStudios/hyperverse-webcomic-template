@@ -1,5 +1,5 @@
 <?php
-require('../global.php');
+require('../settings.php');
 
 $folders = glob('../story/*', GLOB_ONLYDIR);
 natsort($folders);
@@ -23,8 +23,8 @@ foreach($folders as $pagepath) {
 		<item>
 			<title><?=$page?></title>
 			<description><?=$prevAction?></description>
-			<link><?='https://hyperve.rs/story/' . $page . '/'?></link>
-			<guid><?='https://hyperve.rs/story/' . $page . '/'?></guid>
+			<link><?=$domain . '/story/' . $page . '/'?></link>
+			<guid><?=$domain . '/story/' . $page . '/'?></guid>
 			<pubDate><?=$pubdate?></pubDate>
 		</item>
 <?php
@@ -46,9 +46,9 @@ ob_start();
 	<channel>
 		<atom:link href="https://hyperve.rs/feed/" rel="self" type="application/rss+xml" />
 
-		<title>hyperverse</title>
-		<link>https://hyperve.rs/</link>
-		<description>A webcomic that will span many universes.</description>
+		<title><?=$title?></title>
+		<link><?=$domain?></link>
+		<description><?=$description?></description>
 		<?php foreach($items as $item) echo($item)?>
 	</channel>
 </rss>

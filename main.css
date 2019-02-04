@@ -1,25 +1,3 @@
-.center-text {
-	text-align: center !important;
-}
-
-.hilbert {
-	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-.next {
-	font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-.continue {
-	font-family: 'Oswald', sans-serif;
-}
-
-.continue-rant {
-	font-family: 'Permanent Marker', cursive;
-}
-
-
-
 body {
 	background: #1f2038;
 	color: lightgray;
