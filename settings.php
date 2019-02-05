@@ -37,6 +37,9 @@ $imageWidth['desktop'] = '1024px';
 // If you have SSL encryption (https) then set this to 'true'
 $https = false;
 
+// Your Twitter account, unrelated to the links at the bottom, it's for the Twitter metadata
+$twitterAccount = '@whatever';
+
 // Various social media links, set the URL to '' to disable it and include the full URL (http://whatever.com/...)
 // Notice: you will have to source your own icons in the SVG format unless you go into the code and change the type manually
 // For example, for a Twitter icon download a suitable SVG file and place it in the /icns/ folder and name it 'twitter-icon.svg'

@@ -54,13 +54,13 @@ if($page == '') {
 	<meta property="og:title" content="<?=$title?>">
 	<meta property="og:url" content="<?=$domain?>">
 	<meta property="og:description" content="<?=$description?>">
-	<meta property="og:image" content="<?=$domain . '/story/ ' . $page . '/' . $firstImage?>">
+	<meta property="og:image" content="<?=$domain . '/' . $pageFolder . '/' . $page . '/' . $firstPanel?>">
 
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:site" content="<?=$twitterHandle?>">
 	<meta name="twitter:creator" content="<?=$twitterHandle?>">
 	<meta property="twitter:title" content="<?=$title . ' | page ' . $page?>">
-	<meta property="twitter:image" content="<?=$domain . '/story/ ' . $page . '/' . $firstImage?>">
+	<meta property="twitter:image" content="<?=$domain . '/' . $pageFolder . '/' . $page . '/' . $firstPanel?>">
 <?php
 	echo(ob_get_clean());
 }
