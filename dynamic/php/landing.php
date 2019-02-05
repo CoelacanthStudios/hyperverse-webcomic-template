@@ -12,7 +12,7 @@
 	
 <div id="footer">
 	<?=$warning['epilepsy'] ? '<span>epilepsy warning: flashing colors</span><br><br>' : ''?>
-	<a <?=is_file('dynamic/php/credits.php') ? 'href="?p=credits"' : ''?>><?=$license?></a><br>
+	<a><?=$license?></a><br>
 	<?php require('dynamic/php/footer.php')?>
 </div>
 	

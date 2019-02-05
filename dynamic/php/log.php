@@ -71,4 +71,9 @@
 			foreach($pages as $item) echo($item);
 			?>
 		</div>
+		
+		<div id="footer">
+			<a><?=$license?></a><br>
+			<?php require('dynamic/php/footer.php')?>
+		</div>
 </body>

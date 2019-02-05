@@ -35,7 +35,7 @@
 </div>
 
 <div id="footer">
-	<a href="?p=credits"><?=$license?></a><br>
+	<a><?=$license?></a><br>
 	<?php require('dynamic/php/footer.php')?>
 </div>
 
