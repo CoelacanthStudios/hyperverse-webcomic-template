@@ -25,3 +25,27 @@ function autoSave() {
 	else
 		Coogkie.remove('autosave');
 }
+
+$(document).keydown((e) => {
+	switch(e.which) {
+		case 37: //left
+			$('.prev-button')[0].click();
+		break;
+					
+		case 39: //right
+			$('.next-button')[0].click();
+		break;
+
+
+		case 65: //a
+			$('.prev-button')[0].click();
+		break;
+					
+		case 68: //d
+			$('.next-button')[0].click();
+		break;
+
+		default: return; // exit this handler for other keys
+	}
+	e.preventDefault(); // prevent the default action (scroll / move caret)
+});

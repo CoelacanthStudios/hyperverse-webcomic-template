@@ -1,0 +1,34 @@
+<!-- 
+	Ok, some quick notes about how all this works.
+	The $pubDate variable is how the RSS feed and the page log get the date each page was published.
+ -->
+<?php $pubdate = 'Mon, 4 Feb 2019 04:56 EST'?>
+
+<!-- 
+	You can name the images whatever you want but be consistent so the metadata tags can find the image.
+	Of course there is an option in the settings.php file so you can set what the first panel is named.
+ -->
+<?='<img class="panel" src="/' . $pageFolder . '/' . $page . '/panel1.jpg">'?>
+<!-- <img class="panel" src="panel1.jpg"> -->
+
+<!-- 
+	This is the caption, pretty obvious what it's used for.
+ -->
+<div class="caption">
+	There once was a dog named Scrungus.<br>
+	And one day he ate some fungus.<br>
+	Then he got really thin, found this jacket in a bin,<br>
+	And then found happiness in abundance.
+</div>
+
+<!-- 
+	This is what the next button text will be set to, if you need to use an apostrophe you'll need to escape it by using a backslash.
+	For example, to have the next button be "Let's go eat" set $nextButton to 'Let\'s go eat' or use quotes like so "Let's gp eat" either way works.
+	Important to note: the next button only appears on the page when the next page exists.
+ -->
+<?php $nextButton = 'chungo spungo'?>
+
+<!-- 
+	That should be all you need to know about how this works, you just need to copy this file over to the next page and probably delete these comments.
+	Good luck making your comic and have fun!
+ -->

@@ -6,13 +6,13 @@ window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
-gtag('config', '<?=$googleAnalytics['id']?>');
+gtag('config', '<?=$googleAnalytics?>');
 </script>
 <?php
-if($googleAnalytics['enabled']) {
+if($googleAnalytics != '') {
 	echo(ob_get_clean());
 } else {
-	ob_get_clean();
+	ob_clean();
 }
 ?>
 
@@ -21,10 +21,9 @@ if($googleAnalytics['enabled']) {
 <title><?=$title?></title>
 
 <link rel="icon" href="/icns/favicon.png">
-<link rel="stylesheet" href="main.css">
-<?=$uri == '/' ? '<link rel="stylesheet" href="dynamic/css/landing.css">' : ''?>
-
-<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,400" rel="stylesheet">
+<link rel="stylesheet" href="/dynamic/css/style.php">
+<link rel="stylesheet" href="/dynamic/css/main.css">
+<?=$uri == '/' ? '<link rel="stylesheet" href="/dynamic/css/landing.css">' : ''?>
 
 <meta name="viewport" content="width=device-width initial-scale=1">
 <meta charset="utf-8">
@@ -44,7 +43,7 @@ if($page == '') {
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:site" content="<?=$twitterHandle?>">
 	<meta name="twitter:creator" content="<?=$twitterHandle?>">
-	<meta property="twitter:title" content="<?=$title . ' | page ' . $page?>">
+	<meta property="twitter:title" content="<?=$title?>">
 	<meta property="twitter:image" content="<?=$domain?>/img/default.jpg">
 <?php
 	echo(ob_get_clean());
@@ -54,13 +53,13 @@ if($page == '') {
 	<meta property="og:title" content="<?=$title?>">
 	<meta property="og:url" content="<?=$domain?>">
 	<meta property="og:description" content="<?=$description?>">
-	<meta property="og:image" content="<?=$domain . '/story/ ' . $page . '/panel.gif'?>">
+	<meta property="og:image" content="<?=$domain . '/story/ ' . $page . '/' . $firstImage?>">
 
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:site" content="<?=$twitterHandle?>">
 	<meta name="twitter:creator" content="<?=$twitterHandle?>">
 	<meta property="twitter:title" content="<?=$title . ' | page ' . $page?>">
-	<meta property="twitter:image" content="<?=$domain . '/story/ ' . $page . '/panel.gif'?>">
+	<meta property="twitter:image" content="<?=$domain . '/story/ ' . $page . '/' . $firstImage?>">
 <?php
 	echo(ob_get_clean());
 }

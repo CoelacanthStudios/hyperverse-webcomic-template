@@ -1,0 +1,19 @@
+<!-- 
+	Ok, some quick notes about how all this works.
+	The $pubDate variable is how the RSS feed and the page log get the date each page was published.
+ -->
+<?php $pubdate = 'Tue, 5 Feb 2019 12:26 EST'?>
+
+<!-- 
+	You can name the images whatever you want but be consistent so the metadata tags can find the image.
+	Of course there is an option in the settings.php file so you can set what the first panel is named.
+ -->
+<?='<img class="panel" src="/' . $pageFolder . '/' . $page . '/panel1.jpg">'?>
+<?='<img class="panel" src="/' . $pageFolder . '/' . $page . '/panel2.jpg">'?>
+
+<div class="caption text-center">
+	How dare you speak the forbidden name,<br>
+	CHUNGO SPUNGO?
+</div>
+
+<?php $nextButton = 'Next'?>
