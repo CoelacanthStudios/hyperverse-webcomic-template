@@ -38,13 +38,13 @@ $imageWidth['desktop'] = '1024px';
 $https = false;
 
 // Your Twitter account, unrelated to the links at the bottom, it's for the Twitter metadata
-$twitterAccount = '@whatever';
+$twitterAccount = '@hyprverse';
 
 // Various social media links, set the URL to '' to disable it and include the full URL (http://whatever.com/...)
 // Notice: you will have to source your own icons in the SVG format unless you go into the code and change the type manually
 // For example, for a Twitter icon download a suitable SVG file and place it in the /icns/ folder and name it 'twitter-icon.svg'
 // The PHP code will take care of everything, you just have to set the link and the title text (if you want hover text) just make sure the icon has the same name as the link type
-$socialMedia['twitter'] = ['url'=>'https://twitter.com/whatever', 'title'=>'This is an example title for when you mouse over the icon'];
+$socialMedia['twitter'] = ['url'=>'https://twitter.com/hyprverse', 'title'=>'This is an example title for when you mouse over the icon'];
 
 // Warnings for various things
 $warning['epilepsy'] = false; //Toggles the epilepsy warning on the main page
