@@ -6,6 +6,6 @@
 
 A working example of this template is my webcomic which I made this template from.
 
-[Here's a link to my webcomic so you can see what it looks like.](https://hyperve.rs/story/95/)
+[Here's a link to my webcomic so you can see what it looks like.](https://hyperve.rs/)
 
 This template is almost entirely automatically managed, all you have to do is customize the settings file `(/settings.php)` to your liking and copy the last page folder and change the caption.
