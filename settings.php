@@ -49,7 +49,11 @@ $warning['epilepsy'] = false; //Toggles the epilepsy warning on the main page
 
 /*
  * Here are all of the color management settings
+ * All of these properties are applied directly to a dynamic CSS file so all values need to be CSS compliant
+ * Don't change | these properties unless you change them in /dynamic/css/style.php
+ *              V
  */
+
 $color['background'] = '#1f2038'; // The background behind everything
 $color['text-color'] = 'lightgray'; // The color of the caption text mainly
 $color['link-color'] = '#bb51b6'; // General link color
