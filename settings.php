@@ -7,12 +7,14 @@
 // What you want the title of the website to be
 $title = 'something';
 
+// What you want the title of the website to be
+$startText = 'start';
+
 // What you want the page get request to be, for example setting it to 'story' would make the URL for the first page look like:
 // your.domain.com/?story=1
 $pageName = 'story';
 
-// What you want the page get request to be, for example setting it to 'story' would make the URL for the first page look like:
-// your.domain.com/?story=1
+// This is the name of the folder that the comic pages are stored in
 $pageFolder = 'pages';
 
 // Google Analytics, leave blank to disable, enter in your ID to enable
@@ -44,6 +46,22 @@ $socialMedia['twitter'] = ['url'=>'https://twitter.com/whatever', 'title'=>'This
 // Warnings for various things
 $warning['epilepsy'] = false; //Toggles the epilepsy warning on the main page
 
-// No need to change anything beyond this point but you can if you want
-$domain = ($https ? 'https://' : 'http://') . $_SERVER['SERVER_NAME'];
+
+/*
+ * Here are all of the color management settings
+ */
+$color['background'] = '#1f2038'; // The background behind everything
+$color['text-color'] = 'lightgray'; // The color of the caption text mainly
+$color['link-color'] = '#bb51b6'; // General link color
+$color['link-hover-color'] = '#a3479f'; // General link color when mouse is over them
+$color['selection-color'] = '#00000033'; // Color of selected text
+$color['header-background'] = '#4f4f79'; // Background color of the header
+$color['header-link-color'] = '#9292d4'; // Color of the header links
+$color['header-link-hover-color'] = '#a3479f'; // Color of the header links when the mouse is over them
+$color['container-background'] = '#38395a'; // Background of the panel container
+$color['caption-background'] = '#2e2f49'; // Background color of the caption text
+$color['footer-color'] = '#4e4e86'; // Text color of the footer text (license)
+$color['logo-color-main'] = '#141525'; // Main color of the logo on the landing page
+$color['logo-color-back'] = '#2b2c4d'; // Secondary color of the logo on the landing page
+
 ?>

@@ -5,20 +5,11 @@ header("Content-type: text/css");
 ob_start();
 ?>
 :root {
-	--background: #1f2038;
-	--text-color: lightgray;
-	--link-color: #bb51b6;
-	--link-hover-color: #a3479f;
-	--selection-color: #00000033;
-
-	--header-background: #4f4f79;
-	--header-link-color: #9292d4;
-	--header-link-hover-color: #a3479f;
-
-	--container-background: #38395a;
-	--caption-background: #2e2f49;
-
-	--footer-color: #4e4e86;
+	<?php
+	foreach($color as $name=>$value) {
+		echo('--' . $name . ': ' . $value . ';');
+	}
+	?>
 }
 
 /* Desktop Styling */

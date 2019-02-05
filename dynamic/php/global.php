@@ -1,4 +1,6 @@
 <?php
+$domain = ($https ? 'https://' : 'http://') . $_SERVER['SERVER_NAME'];
+
 function replace_img_src($original_img_tag, $new_src_url) {
 	$doc = new DOMDocument();
 	$doc->loadHTML($original_img_tag);

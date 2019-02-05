@@ -15,7 +15,7 @@ a {
 
 a:hover {
 	/* Stylistic stuff */
-	color: var(--text-hover-color);
+	color: var(--link-hover-color);
 }
 
 *::selection {
@@ -72,7 +72,7 @@ a:hover {
 	margin-bottom: 6pt;
 
 	/* Text styling*/
-	color: #9292d4;
+	color: var(--header-link-color);
 	font-size: 14pt;
 }
 
@@ -119,11 +119,6 @@ a:hover {
 
 .next-button {margin: auto};
 .next-button {margin-bottom: 10pt};
-
-.logo {text-shadow: 0px -1px 0px #2b2c4d}
-
-.logo:hover {text-shadow: 0px 1px 0px #2b2c4d}
-
 #container .panel:nth-child(2) {margin-top: 0}
 .panel {margin-top: 2pt}
 

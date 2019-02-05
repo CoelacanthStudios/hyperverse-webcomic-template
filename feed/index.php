@@ -1,7 +1,8 @@
 <?php
 require('../settings.php');
+require('../dynamic/php/global.php');
 
-$folders = glob('../story/*', GLOB_ONLYDIR);
+$folders = glob('../' . $pageFolder . '/*', GLOB_ONLYDIR);
 natsort($folders);
 // $folders = array_reverse($folders);
 
@@ -23,8 +24,8 @@ foreach($folders as $pagepath) {
 		<item>
 			<title><?=$page?></title>
 			<description><?=$prevAction?></description>
-			<link><?=$domain . '/story/' . $page . '/'?></link>
-			<guid><?=$domain . '/story/' . $page . '/'?></guid>
+			<link><?=$domain . '/?' . $pageName . '=' . $page . ''?></link>
+			<guid><?=$domain . '/?' . $pageName . '=' . $page . ''?></guid>
 			<pubDate><?=$pubdate?></pubDate>
 		</item>
 <?php
