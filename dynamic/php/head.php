@@ -1,7 +1,7 @@
 
 <?php ob_start()?>
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=<?=$googleAnalytics['id']?>"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=<?=$googleAnalytics?>"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
