@@ -18,7 +18,7 @@
 	
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/fitty@2.2.6/dist/fitty.module.min.js"></script>
+<script src="/dynamic/js/fitty.min.js"></script>
 <script src="/global.js"></script>
 <script>$(() => {if(window.mobilecheck()) {$('#footer').css('bottom', '0'); $('body').css('height', '90vh')}; fitty('.logo');});</script>
 <?=ob_get_clean()?>
