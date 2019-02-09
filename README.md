@@ -8,4 +8,6 @@ A working example of this template is my webcomic which I made this template fro
 
 [Here's a link to my webcomic so you can see what this template looks like.](https://hyperve.rs/)
 
-This template is almost entirely automatically managed, all you have to do is customize the settings file `(/settings.php)` to your liking and copy the last page folder and change the caption.
+This template is almost entirely automatically managed, all you have to do is customize the settings file `/settings.php` to your liking and copy the last page folder and change the caption.
+
+The default favicon directory is `/icns/favicon.png`, this can be edited in `/dynamic/php/head.php`
