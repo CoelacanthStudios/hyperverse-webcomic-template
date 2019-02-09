@@ -53,7 +53,7 @@ $warning['epilepsy'] = false; //Toggles the epilepsy warning on the main page
 /*
  * Here are all of the color management settings
  * All of these properties are applied directly to a dynamic CSS file so all values need to be CSS compliant
- * Don't change | these properties unless you change them in /dynamic/css/style.php
+ * Don't change | these properties unless you change the CSS variables in /dynamic/css/style.php
  *              V
  */
 
