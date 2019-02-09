@@ -27,9 +27,6 @@
 	echo('<div class="prev-action">' . $prevAction . '</div>');
 	include($pageFolder . '/' . $page . '/index.html');
 	
-	// $content = file_get_contents('story/' . $page . '/index.html');
-	// replace_img_src($content, '');
-	// echo($content);
 	if(is_dir($pageFolder . '/' . ($page + 1))) echo('<br><a class="next-button" href="/?' . $pageName . '=' . ($page + 1) . '">' . $nextButton . '</a><br><br>');
 	?>
 </div>
@@ -41,5 +38,5 @@
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
-<script src="https://hyperspace.sfo2.cdn.digitaloceanspaces.com/js/fitty.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fitty@2.2.6/dist/fitty.module.min.js"></script>
 <script src="/global.js"></script>
