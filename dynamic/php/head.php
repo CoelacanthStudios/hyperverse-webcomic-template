@@ -42,8 +42,8 @@ if($page == '') {
 	<meta property="og:image" content="<?=$domain?>/img/default.jpg">
 
 	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:site" content="<?=$twitterHandle?>">
-	<meta name="twitter:creator" content="<?=$twitterHandle?>">
+	<meta name="twitter:site" content="<?=$twitterAccount?>">
+	<meta name="twitter:creator" content="<?=$twitterAccount?>">
 	<meta property="twitter:title" content="<?=$title?>">
 	<meta property="twitter:image" content="<?=$domain?>/img/default.jpg">
 <?php
@@ -57,8 +57,8 @@ if($page == '') {
 	<meta property="og:image" content="<?=$domain . '/' . $pageFolder . '/' . $page . '/' . $firstPanel?>">
 
 	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:site" content="<?=$twitterHandle?>">
-	<meta name="twitter:creator" content="<?=$twitterHandle?>">
+	<meta name="twitter:site" content="<?=$twitterAccount?>">
+	<meta name="twitter:creator" content="<?=$twitterAccount?>">
 	<meta property="twitter:title" content="<?=$title . ' | page ' . $page?>">
 	<meta property="twitter:image" content="<?=$domain . '/' . $pageFolder . '/' . $page . '/' . $firstPanel?>">
 <?php
