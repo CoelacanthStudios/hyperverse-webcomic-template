@@ -1,5 +1,6 @@
 <?php
 $domain = ($https ? 'https://' : 'http://') . $_SERVER['SERVER_NAME'];
+if($https && $_SERVER['HTTPS'] != 'on'){ header('Location: ' . $domain . $_SERVER["REQUEST_URI"]);}
 
 function replace_img_src($original_img_tag, $new_src_url) {
 	$doc = new DOMDocument();
